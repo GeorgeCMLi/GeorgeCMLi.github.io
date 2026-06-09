@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=SLAYER_ESP32_M1U.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=SLAYER_ESP32_M1U.SchDoc|FileName=SLAYER_PyroActuation.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=SLAYER_ESP32_M1U.SchDoc|FileName=SLAYER_Sensors.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=SLAYER_ESP32_M1U.SchDoc|FileName=SLAYER_Storage.SchDoc|SheetNumber=4

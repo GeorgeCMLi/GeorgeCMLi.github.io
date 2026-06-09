@@ -1,0 +1,6 @@
+Added Component: Designator=*(LinearRegulator)
+Added Pin To Net: NetName=GND Pin=*-1
+Added Pin To Net: NetName=3V3 Pin=*-2
+Added Pin To Net: NetName=5V Pin=*-3
+Added Pin To Net: NetName=3V3 Pin=*-4
+Added Member To Class: ClassName=SLAYER_ESP32_M1U Member=Component * LinearRegulator

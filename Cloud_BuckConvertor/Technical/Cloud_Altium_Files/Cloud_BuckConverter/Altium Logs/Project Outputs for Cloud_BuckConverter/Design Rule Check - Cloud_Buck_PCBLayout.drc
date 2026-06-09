@@ -1,0 +1,99 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc
+Date     : 5/15/2026
+Time     : 2:40:39 AM
+
+Processing Rule : Clearance Constraint (Gap=2mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=100mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Waived Violations Of Rule : Clearance Constraint (Gap=2mil) (All),(All)
+   Waived Violation between Clearance Constraint: (1.795mil < 2mil) Between Region (0 hole(s)) Keep-Out Layer And Track (2516.248mil,2602.5mil)(2578.173mil,2540.575mil) on Top Layer Waived by George Li at 5/15/2026 2:20:10 AM
+   Waived Violation between Clearance Constraint: (1.795mil < 2mil) Between Region (0 hole(s)) Keep-Out Layer And Track (2578.173mil,2540.575mil)(2582mil,2540.575mil) on Top Layer Waived by George Li at 5/15/2026 2:20:10 AM
+   Waived Violation between Clearance Constraint: (1.795mil < 2mil) Between Region (0 hole(s)) Keep-Out Layer And Track (2722mil,2425.653mil)(2722mil,2479mil) on Top Layer Waived by George Li at 5/15/2026 2:20:10 AM
+   Waived Violation between Clearance Constraint: (Collision < 2mil) Between Region (0 hole(s)) Keep-Out Layer And Track (3142mil,2251.61mil)(3152.61mil,2251.61mil) on Top Layer Waived by George Li at 5/15/2026 2:20:31 AM
+   Waived Violation between Clearance Constraint: (Collision < 2mil) Between Region (0 hole(s)) Keep-Out Layer And Track (3152.61mil,2251.61mil)(3240.921mil,2163.299mil) on Top Layer Waived by George Li at 5/15/2026 2:20:31 AM
+   Waived Violation between Clearance Constraint: (1.795mil < 2mil) Between Region (0 hole(s)) Top Layer And Track (2516.248mil,2602.5mil)(2578.173mil,2540.575mil) on Top Layer Waived by George Li at 5/15/2026 2:20:31 AM
+   Waived Violation between Clearance Constraint: (1.795mil < 2mil) Between Region (0 hole(s)) Top Layer And Track (2578.173mil,2540.575mil)(2582mil,2540.575mil) on Top Layer Waived by George Li at 5/15/2026 2:20:31 AM
+   Waived Violation between Clearance Constraint: (1.795mil < 2mil) Between Region (0 hole(s)) Top Layer And Track (2722mil,2425.653mil)(2722mil,2479mil) on Top Layer Waived by George Li at 5/15/2026 2:20:31 AM
+   Waived Violation between Clearance Constraint: (Collision < 2mil) Between Region (0 hole(s)) Top Layer And Track (3142mil,2251.61mil)(3152.61mil,2251.61mil) on Top Layer Waived by George Li at 5/15/2026 2:20:43 AM
+   Waived Violation between Clearance Constraint: (Collision < 2mil) Between Region (0 hole(s)) Top Layer And Track (3152.61mil,2251.61mil)(3240.921mil,2163.299mil) on Top Layer Waived by George Li at 5/15/2026 2:20:43 AM
+Waived Violations :10
+
+Waived Violations Of Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (9mil < 10mil) Between Pad R2-1(2589.5mil,2407mil) on Top Layer And Pad R2-2(2614.5mil,2407mil) on Top Layer [Top Solder] Mask Sliver [9mil]Waived by George Li at 5/15/2026 2:18:56 AM
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (9.5mil < 10mil) Between Pad R2-2(2614.5mil,2407mil) on Top Layer And Via (2589.5mil,2407mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [9.5mil]Waived by George Li at 5/15/2026 2:18:56 AM
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (9.034mil < 10mil) Between Pad U1-1(2665.032mil,2286.094mil) on Top Layer And Pad U1-10(2690.622mil,2267.59mil) on Top Layer [Top Solder] Mask Sliver [9.034mil]Waived by George Li at 5/15/2026 2:18:56 AM
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (9.843mil < 10mil) Between Pad U1-1(2665.032mil,2286.094mil) on Top Layer And Pad U1-2(2645.346mil,2286.094mil) on Top Layer [Top Solder] Mask Sliver [9.843mil]Waived by George Li at 5/15/2026 2:18:56 AM
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (9.843mil < 10mil) Between Pad U1-2(2645.346mil,2286.094mil) on Top Layer And Pad U1-3(2625.661mil,2286.094mil) on Top Layer [Top Solder] Mask Sliver [9.843mil]Waived by George Li at 5/15/2026 2:18:44 AM
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (9.843mil < 10mil) Between Pad U1-3(2625.661mil,2286.094mil) on Top Layer And Pad U1-4(2605.976mil,2286.094mil) on Top Layer [Top Solder] Mask Sliver [9.843mil]Waived by George Li at 5/15/2026 2:18:44 AM
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (7.264mil < 10mil) Between Pad U1-3(2625.661mil,2286.094mil) on Top Layer And Via (2605.976mil,2286.094mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [7.264mil]Waived by George Li at 5/15/2026 2:18:56 AM
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (5.888mil < 10mil) Between Pad U1-3(2625.661mil,2286.094mil) on Top Layer And Via (2615mil,2310mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [5.888mil]Waived by George Li at 5/15/2026 2:18:44 AM
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (9.034mil < 10mil) Between Pad U1-4(2605.976mil,2286.094mil) on Top Layer And Pad U1-5(2580.386mil,2267.59mil) on Top Layer [Top Solder] Mask Sliver [9.034mil]Waived by George Li at 5/15/2026 2:18:44 AM
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (5.271mil < 10mil) Between Pad U1-4(2605.976mil,2286.094mil) on Top Layer And Via (2615mil,2310mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [5.271mil]Waived by George Li at 5/15/2026 2:18:44 AM
+   Waived Violation between Minimum Solder Mask Sliver Constraint: (9.843mil < 10mil) Between Pad U1-6(2602.039mil,2216.409mil) on Top Layer And Pad U1-7(2580.386mil,2196.724mil) on Top Layer [Top Solder] Mask Sliver [9.843mil]Waived by George Li at 5/15/2026 2:18:56 AM
+Waived Violations :11
+
+Waived Violations Of Rule : Silk To Solder Mask (Clearance=10mil) (IsPad),(All)
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (8.602mil < 10mil) Between Pad C6-1(2607.247mil,2349.401mil) on Top Layer And Text "C6" (2581.339mil,2369.003mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [8.602mil]Waived by George Li at 5/15/2026 2:18:30 AM
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad L1-1(2345mil,2602.5mil) on Top Layer And Text ".Designator" (2320mil,2637.5mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by George Li at 5/15/2026 2:18:12 AM
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad U1-1(2665.032mil,2286.094mil) on Top Layer And Track (2574.48mil,2292mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by George Li at 5/15/2026 2:18:30 AM
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad U1-10(2690.622mil,2267.59mil) on Top Layer And Track (2696.528mil,2169.953mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by George Li at 5/15/2026 2:18:30 AM
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad U1-2(2645.346mil,2286.094mil) on Top Layer And Track (2574.48mil,2292mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by George Li at 5/15/2026 2:18:30 AM
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad U1-3(2625.661mil,2286.094mil) on Top Layer And Track (2574.48mil,2292mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by George Li at 5/15/2026 2:18:30 AM
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad U1-4(2605.976mil,2286.094mil) on Top Layer And Track (2574.48mil,2292mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by George Li at 5/15/2026 2:18:30 AM
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad U1-5(2580.386mil,2267.59mil) on Top Layer And Track (2574.48mil,2169.953mil)(2574.48mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by George Li at 5/15/2026 2:18:30 AM
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad U1-6(2602.039mil,2216.409mil) on Top Layer And Track (2574.48mil,2169.953mil)(2574.48mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by George Li at 5/15/2026 2:18:30 AM
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad U1-7(2580.386mil,2196.724mil) on Top Layer And Track (2574.48mil,2169.953mil)(2574.48mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by George Li at 5/15/2026 2:18:12 AM
+   Waived Violation between Silk To Solder Mask Clearance Constraint: (Collision < 10mil) Between Pad U1-9(2661.095mil,2239.244mil) on Top Layer And Track (2696.528mil,2169.953mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]Waived by George Li at 5/15/2026 2:18:30 AM
+Waived Violations :11
+
+Waived Violations Of Rule : Silk to Silk (Clearance=10mil) (All),(All)
+   Waived Violation between Silk To Silk Clearance Constraint: (4.465mil < 10mil) Between Arc (2665.032mil,2319.559mil) on Top Overlay And Text "R3" (2756.984mil,2354.99mil) on Top Overlay Silk Text to Silk Clearance [4.465mil]Waived by George Li at 5/15/2026 2:17:44 AM
+   Waived Violation between Silk To Silk Clearance Constraint: (9.05mil < 10mil) Between Text "R3" (2756.984mil,2354.99mil) on Top Overlay And Track (2574.48mil,2292mil)(2696.528mil,2292mil) on Top Overlay Silk Text to Silk Clearance [9.05mil]Waived by George Li at 5/15/2026 2:18:12 AM
+   Waived Violation between Silk To Silk Clearance Constraint: (5.113mil < 10mil) Between Text "R3" (2756.984mil,2354.99mil) on Top Overlay And Track (2688.653mil,2295.937mil)(2700.465mil,2295.937mil) on Top Overlay Silk Text to Silk Clearance [5.113mil]Waived by George Li at 5/15/2026 2:18:12 AM
+   Waived Violation between Silk To Silk Clearance Constraint: (5.662mil < 10mil) Between Text "R3" (2756.984mil,2354.99mil) on Top Overlay And Track (2700.465mil,2291.213mil)(2700.465mil,2295.937mil) on Top Overlay Silk Text to Silk Clearance [5.662mil]Waived by George Li at 5/15/2026 2:18:00 AM
+Waived Violations :4
+
+
+Violations Detected : 0
+Waived Violations : 36
+Time Elapsed        : 00:00:00

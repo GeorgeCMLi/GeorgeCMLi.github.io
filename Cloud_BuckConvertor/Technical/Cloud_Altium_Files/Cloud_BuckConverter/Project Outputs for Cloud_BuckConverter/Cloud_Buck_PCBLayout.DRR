@@ -1,0 +1,21 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Cloud_Buck_PCBLayout.PcbDoc   5/16/2026  2:18:47 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Cloud_Buck_PCBLayout.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      10mil (0.25mm)                                            Round             7         PTH        1.19inch (30.21mm)
+T2      12mil (0.3mm)                                             Round             2         PTH        0.13inch (3.18mm)
+T3      25mil (0.635mm)                                           Round             3         PTH        0.99inch (25.19mm)
+T4      42mil (1.06mm)                                            Round             2         PTH        0.41inch (10.36mm)
+T5      51mil (1.3mm)                                             Round             8         PTH        2.43inch (61.83mm)
+T6      55mil (1.39mm)                                            Round             3         PTH        0.20inch (5.08mm)
+T7      63mil (1.6mm)                                             Round             4         PTH        0.66inch (16.71mm)
+T8      79mil (2mm)                                               Round             4         PTH        6.18inch (156.85mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              33
+
+Total Processing Time (hh:mm:ss) : 00:00:00

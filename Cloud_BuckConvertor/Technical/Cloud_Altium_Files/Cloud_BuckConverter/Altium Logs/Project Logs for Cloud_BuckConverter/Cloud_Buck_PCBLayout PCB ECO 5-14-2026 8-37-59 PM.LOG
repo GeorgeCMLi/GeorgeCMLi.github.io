@@ -1,0 +1,28 @@
+Added Component: Designator=D1(DIOAD1036W78L463D237)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/1N4742A/Onsemi/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1N4742A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "DO-41 Fairchild Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1N4742A/Onsemi/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Q1(IFX-PG-TO220-3-904-1)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Infineon Technologies"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Order NumberManufacturer Order Number"; Value = "IRF4905"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "PG-TO220-3-904"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RES_CRCW_0805)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2025 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "CRCW080510K0FKEA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Vin Pin=D1-1
+Added Pin To Net: NetName=NetF1_3 Pin=Q1-2
+Added Pin To Net: NetName=Vin Pin=Q1-3
+Added Pin To Net: NetName=GND Pin=R4-2
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=Q1-1
+Added Pin To Net: NetName=NetD1_2 Pin=R4-1
+Added Net: Name=NetD1_2
+Added Member To Class: ClassName=Cloud_Buck_Sch Member=Component D1 1N4742A
+Added Member To Class: ClassName=Cloud_Buck_Sch Member=Component Q1 IRF4905
+Added Member To Class: ClassName=Cloud_Buck_Sch Member=Component R4 CRCW080510K0FKEA

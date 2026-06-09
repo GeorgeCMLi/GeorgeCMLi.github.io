@@ -1,0 +1,481 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD26\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">5/15/2026</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2:40:39 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc" class="file"><acronym title="C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc">C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Waived Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">36</td></tr>
+</table>
+</td>
+</table><a name="IDTKWE0OG2AGJP2ULDIK2QN4HGNHTIPNA131HGSTCMTYINNX1ECM"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLG4V4K5UHHIXLZN4E5HHZ3CCHJQ54ALT2DMM1NOVC15PGP4GCKPK">Clearance Constraint (Gap=2mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDQ4IQDKV3ECGFEV1QABGZ44LSM1MTNZ0JBGKR4FIWO4FZFCNRRAJ">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID45IEBL4BTMWGRHRYGY3WX0OTYQ1HO53QGNCBFMZLIHKOTCJXU">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4OCS1TS3ZAILOBC3WH4NSINSGOFP14NBYCGCPBCHOFYWANCL54BE">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGCQRFXMJQ4K5BEVAZAELTEU5TG5R0GAJNWGHZGDZIA5CIML0FXO">Width Constraint (Min=10mil) (Max=100mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4HMKW5WWRFOFPENU2GGZ1DCHXDTVIOX1PIPOENMZTLFCJZUJZUDG">Routing Topology Rule(Topology=Shortest) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIQKNVHMFAOTZHUXTXB5NMCF5NISEGQMQ4B2ZSEBS0JJ5H5BGOX3I">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBBMDM0TMOWTBIDTWJELZTZNPRKRNZ20JPOBV4IJTMZA0DNJ0W3JI">Hole Size Constraint (Min=1mil) (Max=100mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDS3X5Q3XA14RFMWHRG4AT41M0K4VYX4ENWBWFBPW2AJZSMUEGCIE">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIOBDA4PZCIFCBKQAO4IPV5EQREYEV4PEIZBB5DF3JLB4FY2UODNN">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDTB055MXY3LL3IG1JHZT5N52VEOPT4R41HVSTEVLFML1KKHIL50JJ">Silk To Solder Mask (Clearance=10mil) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBXDSLEGMS5S1LKOSYSJWPS4F4DG22NCTV1SQLNJSXL31NCEUQ4MH">Silk to Silk (Clearance=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0QEK5CAYOKYQFQDKT5TQMRYFTGSSEUB1GFA2LOGVVDU2NUAPMDKE">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRG4DVSTARVWXB5IY13BKX1DDSG5UVY5GYPFEJFENCCAPV50XSXK">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Waived Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAZJLCE4DMAKGJMI1NBGWF4KZSFVILJI05V1QPBCN1VIEE1MMQZZI">Clearance Constraint (Gap=2mil) (All),(All)</a></td>
+<td class="column2">10</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUYCMUUFPI2DAIM1SPO2TM0DGWEORFSTLKJ0UZBBWBJZRITG11NZM">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDERPE0L1AW4GZN2WHRU3MPO3HSESFRQAW2SIMKWE5NNHX3INXETXL">Silk To Solder Mask (Clearance=10mil) (IsPad),(All)</a></td>
+<td class="column2">11</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDMIZLFUWDOQX2LRIDKNBCDV4W3IETYEG1G2B45RJCNFA0EOEAFXDP">Silk to Silk (Clearance=10mil) (All),(All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">36</td>
+</tr>
+</table><br><a name="IDDCCTFRM05VYNIOU25KJ3S35LGNK3DLZ15UN0H0LFBODZMEIDCZEE"><h2>Rule Violations</h2></a><a name="IDIG5Z1SLFNXOWOGKLEFCNT5EOHITCT1NWGV51QBI4IRCG5WLF2PL"><h2>Waived Violations</h2></a><a name="IDAZJLCE4DMAKGJMI1NBGWF4KZSFVILJI05V1QPBCN1VIEE1MMQZZI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Clearance Constraint (Gap=2mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2576.548mil|Location2.X=2579.798mil|Location1.Y=2518.052mil|Location2.Y=2521.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2576.548mil|Location2.X=2579.798mil|Location1.Y=2518.052mil|Location2.Y=2521.302mil|Absolute=True">Clearance Constraint: (1.795mil &lt; 2mil) Between Region (0 hole(s)) Keep-Out Layer And Track (2516.248mil,2602.5mil)(2578.173mil,2540.575mil) on Top Layer </acronym></a><br>Waived by George Li at 5/15/2026 2:20:10 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2576.548mil|Location2.X=2579.798mil|Location1.Y=2518.052mil|Location2.Y=2521.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2576.548mil|Location2.X=2579.798mil|Location1.Y=2518.052mil|Location2.Y=2521.302mil|Absolute=True">Clearance Constraint: (1.795mil &lt; 2mil) Between Region (0 hole(s)) Keep-Out Layer And Track (2578.173mil,2540.575mil)(2582mil,2540.575mil) on Top Layer </acronym></a><br>Waived by George Li at 5/15/2026 2:20:10 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2720.375mil|Location2.X=2723.625mil|Location1.Y=2403.131mil|Location2.Y=2406.381mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2720.375mil|Location2.X=2723.625mil|Location1.Y=2403.131mil|Location2.Y=2406.381mil|Absolute=True">Clearance Constraint: (1.795mil &lt; 2mil) Between Region (0 hole(s)) Keep-Out Layer And Track (2722mil,2425.653mil)(2722mil,2479mil) on Top Layer </acronym></a><br>Waived by George Li at 5/15/2026 2:20:10 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3140.833mil|Location2.X=3143.167mil|Location1.Y=2269.333mil|Location2.Y=2271.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3140.833mil|Location2.X=3143.167mil|Location1.Y=2269.333mil|Location2.Y=2271.667mil|Absolute=True">Clearance Constraint: (Collision &lt; 2mil) Between Region (0 hole(s)) Keep-Out Layer And Track (3142mil,2251.61mil)(3152.61mil,2251.61mil) on Top Layer </acronym></a><br>Waived by George Li at 5/15/2026 2:20:31 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3151.444mil|Location2.X=3153.777mil|Location1.Y=2269.333mil|Location2.Y=2271.667mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3151.444mil|Location2.X=3153.777mil|Location1.Y=2269.333mil|Location2.Y=2271.667mil|Absolute=True">Clearance Constraint: (Collision &lt; 2mil) Between Region (0 hole(s)) Keep-Out Layer And Track (3152.61mil,2251.61mil)(3240.921mil,2163.299mil) on Top Layer </acronym></a><br>Waived by George Li at 5/15/2026 2:20:31 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2576.548mil|Location2.X=2579.798mil|Location1.Y=2518.052mil|Location2.Y=2521.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2576.548mil|Location2.X=2579.798mil|Location1.Y=2518.052mil|Location2.Y=2521.302mil|Absolute=True">Clearance Constraint: (1.795mil &lt; 2mil) Between Region (0 hole(s)) Top Layer And Track (2516.248mil,2602.5mil)(2578.173mil,2540.575mil) on Top Layer </acronym></a><br>Waived by George Li at 5/15/2026 2:20:31 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2576.548mil|Location2.X=2579.798mil|Location1.Y=2518.052mil|Location2.Y=2521.302mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2576.548mil|Location2.X=2579.798mil|Location1.Y=2518.052mil|Location2.Y=2521.302mil|Absolute=True">Clearance Constraint: (1.795mil &lt; 2mil) Between Region (0 hole(s)) Top Layer And Track (2578.173mil,2540.575mil)(2582mil,2540.575mil) on Top Layer </acronym></a><br>Waived by George Li at 5/15/2026 2:20:31 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2720.375mil|Location2.X=2723.625mil|Location1.Y=2403.131mil|Location2.Y=2406.381mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2720.375mil|Location2.X=2723.625mil|Location1.Y=2403.131mil|Location2.Y=2406.381mil|Absolute=True">Clearance Constraint: (1.795mil &lt; 2mil) Between Region (0 hole(s)) Top Layer And Track (2722mil,2425.653mil)(2722mil,2479mil) on Top Layer </acronym></a><br>Waived by George Li at 5/15/2026 2:20:31 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3140.833mil|Location2.X=3143.167mil|Location1.Y=2250.444mil|Location2.Y=2252.777mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3140.833mil|Location2.X=3143.167mil|Location1.Y=2250.444mil|Location2.Y=2252.777mil|Absolute=True">Clearance Constraint: (Collision &lt; 2mil) Between Region (0 hole(s)) Top Layer And Track (3142mil,2251.61mil)(3152.61mil,2251.61mil) on Top Layer </acronym></a><br>Waived by George Li at 5/15/2026 2:20:43 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3151.444mil|Location2.X=3153.777mil|Location1.Y=2250.444mil|Location2.Y=2252.777mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3151.444mil|Location2.X=3153.777mil|Location1.Y=2250.444mil|Location2.Y=2252.777mil|Absolute=True">Clearance Constraint: (Collision &lt; 2mil) Between Region (0 hole(s)) Top Layer And Track (3152.61mil,2251.61mil)(3240.921mil,2163.299mil) on Top Layer </acronym></a><br>Waived by George Li at 5/15/2026 2:20:43 AM</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDUYCMUUFPI2DAIM1SPO2TM0DGWEORFSTLKJ0UZBBWBJZRITG11NZM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2596.375mil|Location2.X=2607.625mil|Location1.Y=2394.875mil|Location2.Y=2406.125mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2596.375mil|Location2.X=2607.625mil|Location1.Y=2394.875mil|Location2.Y=2406.125mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9mil &lt; 10mil) Between Pad R2-1(2589.5mil,2407mil) on Top Layer And Pad R2-2(2614.5mil,2407mil) on Top Layer [Top Solder] Mask Sliver [9mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:56 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2596.125mil|Location2.X=2607.375mil|Location1.Y=2401.375mil|Location2.Y=2412.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2596.125mil|Location2.X=2607.375mil|Location1.Y=2401.375mil|Location2.Y=2412.625mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.5mil &lt; 10mil) Between Pad R2-2(2614.5mil,2407mil) on Top Layer And Via (2589.5mil,2407mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [9.5mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:56 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2668.757mil|Location2.X=2680.007mil|Location1.Y=2267.773mil|Location2.Y=2279.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2668.757mil|Location2.X=2680.007mil|Location1.Y=2267.773mil|Location2.Y=2279.023mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.034mil &lt; 10mil) Between Pad U1-1(2665.032mil,2286.094mil) on Top Layer And Pad U1-10(2690.622mil,2267.59mil) on Top Layer [Top Solder] Mask Sliver [9.034mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:56 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2649.564mil|Location2.X=2660.814mil|Location1.Y=2292.28mil|Location2.Y=2303.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2649.564mil|Location2.X=2660.814mil|Location1.Y=2292.28mil|Location2.Y=2303.53mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.843mil &lt; 10mil) Between Pad U1-1(2665.032mil,2286.094mil) on Top Layer And Pad U1-2(2645.346mil,2286.094mil) on Top Layer [Top Solder] Mask Sliver [9.843mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:56 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2629.879mil|Location2.X=2641.129mil|Location1.Y=2292.28mil|Location2.Y=2303.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2629.879mil|Location2.X=2641.129mil|Location1.Y=2292.28mil|Location2.Y=2303.53mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.843mil &lt; 10mil) Between Pad U1-2(2645.346mil,2286.094mil) on Top Layer And Pad U1-3(2625.661mil,2286.094mil) on Top Layer [Top Solder] Mask Sliver [9.843mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:44 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2610.194mil|Location2.X=2621.444mil|Location1.Y=2292.28mil|Location2.Y=2303.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2610.194mil|Location2.X=2621.444mil|Location1.Y=2292.28mil|Location2.Y=2303.53mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.843mil &lt; 10mil) Between Pad U1-3(2625.661mil,2286.094mil) on Top Layer And Pad U1-4(2605.976mil,2286.094mil) on Top Layer [Top Solder] Mask Sliver [9.843mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:44 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2611.483mil|Location2.X=2622.733mil|Location1.Y=2280.469mil|Location2.Y=2291.719mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2611.483mil|Location2.X=2622.733mil|Location1.Y=2280.469mil|Location2.Y=2291.719mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (7.264mil &lt; 10mil) Between Pad U1-3(2625.661mil,2286.094mil) on Top Layer And Via (2605.976mil,2286.094mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [7.264mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:56 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2613.853mil|Location2.X=2625.103mil|Location1.Y=2294.94mil|Location2.Y=2306.19mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2613.853mil|Location2.X=2625.103mil|Location1.Y=2294.94mil|Location2.Y=2306.19mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.888mil &lt; 10mil) Between Pad U1-3(2625.661mil,2286.094mil) on Top Layer And Via (2615mil,2310mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [5.888mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:44 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2591.001mil|Location2.X=2602.251mil|Location1.Y=2267.773mil|Location2.Y=2279.023mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2591.001mil|Location2.X=2602.251mil|Location1.Y=2267.773mil|Location2.Y=2279.023mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.034mil &lt; 10mil) Between Pad U1-4(2605.976mil,2286.094mil) on Top Layer And Pad U1-5(2580.386mil,2267.59mil) on Top Layer [Top Solder] Mask Sliver [9.034mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:44 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2606.119mil|Location2.X=2617.369mil|Location1.Y=2294.776mil|Location2.Y=2306.026mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2606.119mil|Location2.X=2617.369mil|Location1.Y=2294.776mil|Location2.Y=2306.026mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (5.271mil &lt; 10mil) Between Pad U1-4(2605.976mil,2286.094mil) on Top Layer And Via (2615mil,2310mil) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [5.271mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:44 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2562.95mil|Location2.X=2574.2mil|Location1.Y=2200.942mil|Location2.Y=2212.192mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2562.95mil|Location2.X=2574.2mil|Location1.Y=2200.942mil|Location2.Y=2212.192mil|Absolute=True">Minimum Solder Mask Sliver Constraint: (9.843mil &lt; 10mil) Between Pad U1-6(2602.039mil,2216.409mil) on Top Layer And Pad U1-7(2580.386mil,2196.724mil) on Top Layer [Top Solder] Mask Sliver [9.843mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:56 AM</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDERPE0L1AW4GZN2WHRU3MPO3HSESFRQAW2SIMKWE5NNHX3INXETXL"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Silk To Solder Mask (Clearance=10mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2599.04mil|Location2.X=2610.29mil|Location1.Y=2358.077mil|Location2.Y=2369.327mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2599.04mil|Location2.X=2610.29mil|Location1.Y=2358.077mil|Location2.Y=2369.327mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (8.602mil &lt; 10mil) Between Pad C6-1(2607.247mil,2349.401mil) on Top Layer And Text "C6" (2581.339mil,2369.003mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [8.602mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:30 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.167mil|Location2.X=2323.833mil|Location1.Y=2629.167mil|Location2.Y=2636.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2316.167mil|Location2.X=2323.833mil|Location1.Y=2629.167mil|Location2.Y=2636.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad L1-1(2345mil,2602.5mil) on Top Layer And Text ".Designator" (2320mil,2637.5mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:12 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2656.277mil|Location2.X=2663.944mil|Location1.Y=2288.167mil|Location2.Y=2295.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2656.277mil|Location2.X=2663.944mil|Location1.Y=2288.167mil|Location2.Y=2295.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad U1-1(2665.032mil,2286.094mil) on Top Layer And Track (2574.48mil,2292mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:30 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2692.694mil|Location2.X=2700.361mil|Location1.Y=2258.836mil|Location2.Y=2266.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2692.694mil|Location2.X=2700.361mil|Location1.Y=2258.836mil|Location2.Y=2266.503mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad U1-10(2690.622mil,2267.59mil) on Top Layer And Track (2696.528mil,2169.953mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:30 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.592mil|Location2.X=2644.258mil|Location1.Y=2288.167mil|Location2.Y=2295.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2636.592mil|Location2.X=2644.258mil|Location1.Y=2288.167mil|Location2.Y=2295.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad U1-2(2645.346mil,2286.094mil) on Top Layer And Track (2574.48mil,2292mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:30 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2616.907mil|Location2.X=2624.573mil|Location1.Y=2288.167mil|Location2.Y=2295.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2616.907mil|Location2.X=2624.573mil|Location1.Y=2288.167mil|Location2.Y=2295.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad U1-3(2625.661mil,2286.094mil) on Top Layer And Track (2574.48mil,2292mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:30 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2597.222mil|Location2.X=2604.888mil|Location1.Y=2288.167mil|Location2.Y=2295.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2597.222mil|Location2.X=2604.888mil|Location1.Y=2288.167mil|Location2.Y=2295.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad U1-4(2605.976mil,2286.094mil) on Top Layer And Track (2574.48mil,2292mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:30 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2570.647mil|Location2.X=2578.314mil|Location1.Y=2258.836mil|Location2.Y=2266.503mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2570.647mil|Location2.X=2578.314mil|Location1.Y=2258.836mil|Location2.Y=2266.503mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad U1-5(2580.386mil,2267.59mil) on Top Layer And Track (2574.48mil,2169.953mil)(2574.48mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:30 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2570.647mil|Location2.X=2578.314mil|Location1.Y=2207.655mil|Location2.Y=2215.322mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2570.647mil|Location2.X=2578.314mil|Location1.Y=2207.655mil|Location2.Y=2215.322mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad U1-6(2602.039mil,2216.409mil) on Top Layer And Track (2574.48mil,2169.953mil)(2574.48mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:30 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2570.647mil|Location2.X=2578.314mil|Location1.Y=2187.97mil|Location2.Y=2195.636mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2570.647mil|Location2.X=2578.314mil|Location1.Y=2187.97mil|Location2.Y=2195.636mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad U1-7(2580.386mil,2196.724mil) on Top Layer And Track (2574.48mil,2169.953mil)(2574.48mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:12 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2692.694mil|Location2.X=2700.361mil|Location1.Y=2227.537mil|Location2.Y=2235.203mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2692.694mil|Location2.X=2700.361mil|Location1.Y=2227.537mil|Location2.Y=2235.203mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad U1-9(2661.095mil,2239.244mil) on Top Layer And Track (2696.528mil,2169.953mil)(2696.528mil,2292mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:30 AM</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDMIZLFUWDOQX2LRIDKNBCDV4W3IETYEG1G2B45RJCNFA0EOEAFXDP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Silk to Silk (Clearance=10mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2671.481mil|Location2.X=2682.731mil|Location1.Y=2313.934mil|Location2.Y=2325.184mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2671.481mil|Location2.X=2682.731mil|Location1.Y=2313.934mil|Location2.Y=2325.184mil|Absolute=True">Silk To Silk Clearance Constraint: (4.465mil &lt; 10mil) Between Arc (2665.032mil,2319.559mil) on Top Overlay And Text "R3" (2756.984mil,2354.99mil) on Top Overlay Silk Text to Silk Clearance [4.465mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:17:44 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2684.71mil|Location2.X=2695.96mil|Location1.Y=2293.853mil|Location2.Y=2305.103mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2684.71mil|Location2.X=2695.96mil|Location1.Y=2293.853mil|Location2.Y=2305.103mil|Absolute=True">Silk To Silk Clearance Constraint: (9.05mil &lt; 10mil) Between Text "R3" (2756.984mil,2354.99mil) on Top Overlay And Track (2574.48mil,2292mil)(2696.528mil,2292mil) on Top Overlay Silk Text to Silk Clearance [9.05mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:12 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2684.71mil|Location2.X=2695.96mil|Location1.Y=2295.821mil|Location2.Y=2307.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2684.71mil|Location2.X=2695.96mil|Location1.Y=2295.821mil|Location2.Y=2307.071mil|Absolute=True">Silk To Silk Clearance Constraint: (5.113mil &lt; 10mil) Between Text "R3" (2756.984mil,2354.99mil) on Top Overlay And Track (2688.653mil,2295.937mil)(2700.465mil,2295.937mil) on Top Overlay Silk Text to Silk Clearance [5.113mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:12 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2696.764mil|Location2.X=2708.014mil|Location1.Y=2295.766mil|Location2.Y=2307.016mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Cloud_Buck_PCBLayout.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2696.764mil|Location2.X=2708.014mil|Location1.Y=2295.766mil|Location2.Y=2307.016mil|Absolute=True">Silk To Silk Clearance Constraint: (5.662mil &lt; 10mil) Between Text "R3" (2756.984mil,2354.99mil) on Top Overlay And Track (2700.465mil,2291.213mil)(2700.465mil,2295.937mil) on Top Overlay Silk Text to Silk Clearance [5.662mil]</acronym></a><br>Waived by George Li at 5/15/2026 2:18:00 AM</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

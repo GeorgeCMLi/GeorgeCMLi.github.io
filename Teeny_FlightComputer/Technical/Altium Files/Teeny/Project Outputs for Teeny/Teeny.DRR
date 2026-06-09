@@ -1,0 +1,20 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Teeny.PcbDoc   6/7/2026  7:55:40 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Teeny-RoundHoles.TXT
+ASCII SlotHoles File : Teeny-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      8mil (0.2mm)                                              Round             32        PTH        3.43inch (87.15mm)
+T2      12mil (0.3mm)                                             Round             2         PTH        0.44inch (11.20mm)
+T3      14mil (0.35mm)                                            Round             2         PTH        0.45inch (11.31mm)
+T4      22mil (0.559mm)                                           Slot              2         PTH        0.60inch (15.30mm)
+T5      24mil (0.61mm)                                            Slot              2         PTH        0.43inch (10.84mm)
+T6      60mil (1.524mm)                                           Round             2         PTH        0.52inch (13.21mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              42
+
+Total Processing Time (hh:mm:ss) : 00:00:00

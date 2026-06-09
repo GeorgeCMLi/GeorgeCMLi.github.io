@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [SLAYER_Altium.PrjPcb]
+   Generated File[SLAYER_Altium.TXT]
+   Generated File[SLAYER_Altium.LDP]
+   Generated File[SLAYER_Altium.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 6:12:40 PM On 5/28/2026

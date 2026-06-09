@@ -1,0 +1,14 @@
+Added Component: Designator=S?(SlideSwitch2)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'CW Industries'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "GF-126-0159"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetR16_2 Pin=S?-3
+Added Pin To Net: NetName=3V3 Pin=S?-5
+Added Pin To Net: NetName=NetR18_1 Pin=S?-6
+Added Pin To Net: NetName=NetS?_2 Pin=S?-2
+Added Pin To Net: NetName=NetS?_2 Pin=U1-6
+Added Net: Name=NetS?_2
+Added Member To Class: ClassName=SLAYER_PyroActuation Member=Component S? DPDT

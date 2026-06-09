@@ -1,0 +1,27 @@
+Altium Designer Pick and Place Locations
+C:\Users\schoo\Documents\GitHub\Teeny_FlightComputer\Teeny_FlightComputer\Technical\Altium Files\Teeny\Project Outputs for Teeny\Pick Place for Teeny.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       07/06/26
+Time:       19:56
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"R3","3.3k","TopLayer","3.3k/0.1W","960.000","216.500","270","RC0603FR-073K3L"
+"LED1","GrnLED","TopLayer","GreenLED","960.000","124.000","90","LTST-C190KGKT"
+"R2","10k","TopLayer","10k/0.05W","315.000","335.000","90","RC0201FR-0710KL"
+"R1","10k","TopLayer","10k/0.05W","695.000","55.000","270","RC0201FR-0710KL"
+"C4","0.1uF","TopLayer","0.1uF/16V","679.474","269.984","180","GRM155R71C104KA88D"
+"C3","0.1uF","TopLayer","0.1uF/16V","341.500","70.000","0","GRM155R71C104KA88D"
+"C2","0.1uF","TopLayer","0.1uF/16V","825.487","281.500","270","GRM155R71C104KA88D"
+"C1","0.1uF","TopLayer","0.1uF/16V","890.000","150.000","180","GRM155R71C104KA88D"
+"U3","LinReg","TopLayer","LinReg","500.000","420.000","180","NCP1117ST33T3G"
+"U2","IMU","TopLayer","IMU","795.000","170.000","90","LSM6DSRXTR"
+"U1","MCU","TopLayer","MCU","570.000","140.500","180","ATSAMD21E18A-MUT"
+"J2","MicroUSB","TopLayer","MicroUSB","177.185","250.000","270","10118194-0001LF"
+"J1","MicroSD","BottomLayer","MicroSD","713.051","298.740","270","MEM2080-00-128-00-A"
+"CR1","SchDiode","TopLayer","SchDiode","150.000","490.000","180","B5819W-TP"

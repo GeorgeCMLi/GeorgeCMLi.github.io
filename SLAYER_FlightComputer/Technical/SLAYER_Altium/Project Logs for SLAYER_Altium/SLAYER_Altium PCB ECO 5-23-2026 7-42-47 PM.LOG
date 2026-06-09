@@ -1,0 +1,56 @@
+Change Physical Footprint: Designator=C1 Old Footprint=10uF/25V/0603 New Footprint=10uF/25V/0603
+Change Physical Footprint: Designator=C2 Old Footprint=0.1uF/50V New Footprint=0.1uF/50V
+Change Physical Footprint: Designator=C3 Old Footprint=1uF/16V New Footprint=1uF/16V
+Change Physical Footprint: Designator=C4 Old Footprint=10uF/25V/0603 New Footprint=10uF/25V/0603
+Change Physical Footprint: Designator=C5 Old Footprint=1uF/16V New Footprint=1uF/16V
+Change Physical Footprint: Designator=C6 Old Footprint=0.1uF/50V New Footprint=0.1uF/50V
+Change Physical Footprint: Designator=C7 Old Footprint=10uF/25V/0603 New Footprint=10uF/25V/0603
+Change Physical Footprint: Designator=C8 Old Footprint=0.1uF/50V New Footprint=0.1uF/50V
+Change Physical Footprint: Designator=C9 Old Footprint=10uF/25V/0603 New Footprint=10uF/25V/0603
+Change Physical Footprint: Designator=C10 Old Footprint=0.1uF/50V New Footprint=0.1uF/50V
+Change Physical Footprint: Designator=C11 Old Footprint=0.1uF/50V New Footprint=0.1uF/50V
+Change Physical Footprint: Designator=C12 Old Footprint=0.1uF/50V New Footprint=0.1uF/50V
+Change Physical Footprint: Designator=C13 Old Footprint=0.1uF/50V New Footprint=0.1uF/50V
+Change Physical Footprint: Designator=C14 Old Footprint=0.1uF/50V New Footprint=0.1uF/50V
+Change Physical Footprint: Designator=C15 Old Footprint=0.1uF/50V New Footprint=0.1uF/50V
+Change Physical Footprint: Designator=C16 Old Footprint=1000uF/16V New Footprint=1000uF/16V
+Change Physical Footprint: Designator=C17 Old Footprint=0.1uF/50V New Footprint=0.1uF/50V
+Change Physical Footprint: Designator=CR1 Old Footprint=Schottky Diode New Footprint=Schottky Diode
+Change Physical Footprint: Designator=J2 Old Footprint=Micro_USB_B New Footprint=Micro_USB_B
+Change Physical Footprint: Designator=LED1 Old Footprint=GreenLED New Footprint=GreenLED
+Change Physical Footprint: Designator=LED2 Old Footprint=GreenLED New Footprint=GreenLED
+Change Physical Footprint: Designator=LED3 Old Footprint=RedLED New Footprint=RedLED
+Change Physical Footprint: Designator=LR1 Old Footprint=LinearRegulator New Footprint=LinearRegulator
+Change Physical Footprint: Designator=Q1 Old Footprint=NPN/25V/1.5A New Footprint=NPN/25V/1.5A
+Change Physical Footprint: Designator=Q2 Old Footprint=NPN/25V/1.5A New Footprint=NPN/25V/1.5A
+Change Physical Footprint: Designator=R1 Old Footprint=10k/0.125W New Footprint=10k/0.125W
+Change Physical Footprint: Designator=R2 Old Footprint=22.1k/0.125W New Footprint=22.1k/0.125W
+Change Physical Footprint: Designator=R3 Old Footprint=47.5k/0.125W New Footprint=47.5k/0.125W
+Change Physical Footprint: Designator=R4 Old Footprint=1k/0.125W New Footprint=1k/0.125W
+Change Physical Footprint: Designator=R5 Old Footprint=10k/0.125W New Footprint=10k/0.125W
+Change Physical Footprint: Designator=R6 Old Footprint=5.1k/0.25W New Footprint=5.1k/0.25W
+Change Physical Footprint: Designator=R7 Old Footprint=10k/0.125W New Footprint=10k/0.125W
+Change Physical Footprint: Designator=R8 Old Footprint=10k/0.125W New Footprint=10k/0.125W
+Change Physical Footprint: Designator=R9 Old Footprint=5.1k/0.25W New Footprint=5.1k/0.25W
+Change Physical Footprint: Designator=R10 Old Footprint=4.7k/0.125W New Footprint=4.7k/0.125W
+Change Physical Footprint: Designator=R11 Old Footprint=4.7k/0.125W New Footprint=4.7k/0.125W
+Change Physical Footprint: Designator=R12 Old Footprint=4.7k/0.125W New Footprint=4.7k/0.125W
+Change Physical Footprint: Designator=R13 Old Footprint=4.7k/0.125W New Footprint=4.7k/0.125W
+Change Physical Footprint: Designator=R14 Old Footprint=1k/0.125W New Footprint=1k/0.125W
+Change Physical Footprint: Designator=R15 Old Footprint=500k/0.25W New Footprint=500k/0.25W
+Change Physical Footprint: Designator=R16 Old Footprint=1k/0.125W New Footprint=1k/0.125W
+Change Physical Footprint: Designator=R17 Old Footprint=10k/0.125W New Footprint=10k/0.125W
+Change Physical Footprint: Designator=R18 Old Footprint=5.1k/0.25W New Footprint=5.1k/0.25W
+Change Physical Footprint: Designator=R19 Old Footprint=10k/0.125W New Footprint=10k/0.125W
+Change Physical Footprint: Designator=R20 Old Footprint=10k/0.125W New Footprint=10k/0.125W
+Change Physical Footprint: Designator=SW1 Old Footprint=TactSwitch New Footprint=TactSwitch
+Change Physical Footprint: Designator=SW2 Old Footprint=TactSwitch New Footprint=TactSwitch
+Change Physical Footprint: Designator=U1 Old Footprint=ESP32-C3-MINI-1U_EXP New Footprint=ESP32-C3-MINI-1U_EXP
+Change Physical Footprint: Designator=U2 Old Footprint=USB to UART New Footprint=USB to UART
+Change Physical Footprint: Designator=U3 Old Footprint=TVS Diode New Footprint=TVS Diode
+Change Physical Footprint: Designator=U4 Old Footprint=TVS Diode New Footprint=TVS Diode
+Change Physical Footprint: Designator=U5 Old Footprint=TVS Diode New Footprint=TVS Diode
+Change Physical Footprint: Designator=U6 Old Footprint=IMU New Footprint=IMU
+Change Physical Footprint: Designator=U7 Old Footprint=BMP581 New Footprint=BMP581
+Change Physical Footprint: Designator=U8 Old Footprint=MOSFET New Footprint=MOSFET
+Change Physical Footprint: Designator=U9 Old Footprint=SPI_Memory/1Mb New Footprint=SPI_Memory/1Mb

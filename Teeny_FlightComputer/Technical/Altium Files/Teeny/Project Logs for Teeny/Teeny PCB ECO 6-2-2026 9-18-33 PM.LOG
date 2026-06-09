@@ -1,0 +1,6 @@
+Change Physical Footprint: Designator=CR1 Old Footprint=SchDiode New Footprint=SchDiode
+Change Physical Footprint: Designator=J1 Old Footprint=MicroSD New Footprint=MicroSD
+Change Physical Footprint: Designator=J2 Old Footprint=MicroUSB New Footprint=MicroUSB
+Change Physical Footprint: Designator=U1 Old Footprint=MCU New Footprint=MCU
+Change Physical Footprint: Designator=U2 Old Footprint=IMU New Footprint=IMU
+Change Physical Footprint: Designator=U3 Old Footprint=LinReg New Footprint=LinReg

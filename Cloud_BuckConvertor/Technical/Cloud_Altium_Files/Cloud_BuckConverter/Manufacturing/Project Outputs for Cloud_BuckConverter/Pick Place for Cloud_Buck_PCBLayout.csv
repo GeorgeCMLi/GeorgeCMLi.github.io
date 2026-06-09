@@ -1,0 +1,34 @@
+Altium Designer Pick and Place Locations
+C:\Users\schoo\Documents\GitHub\Cloud_BuckConvertor\Technical\Cloud_Altium_Files\Cloud_BuckConverter\Project Outputs for Cloud_BuckConverter\Pick Place for Cloud_Buck_PCBLayout.csv
+
+========================================================================================================================
+File Design Information:
+
+Date:       15/05/26
+Time:       20:29
+Revision:   2512ba9e6a7a723b93a56256e29cb726720a802d
+Variant:    No variations
+Units used: mil
+
+"Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"R7","RC0805FR-071K5L","TopLayer","RC0805N_YAG","2249.000","1944.000","0","Description"
+"R5","RC0805FR-071K5L","TopLayer","RC0805N_YAG","2882.000","2618.000","0","Description"
+"LED2","LTST-C170KGKT","TopLayer","LED_LTST-C170KGKT_LTO","2444.000","1944.000","180","Description"
+"LED1","LTST-C170KGKT","TopLayer","LED_LTST-C170KGKT_LTO","3087.000","2618.000","180","Description"
+"U1","TPS56A37RPAR","TopLayer","RPA0010A-MFG","2635.504","2239.047","270","4.5V to 28V input, 10A synchronous buck converter 10-VQFN-HR -40 to 150"
+"R4","CRCW080510K0FKEA","TopLayer","RES_CRCW_0805","3142.000","2292.000","90","D12/CRCW0805 100 10K 1% ET1 e3"
+"R3","CRCW040252K3FKED","TopLayer","RES_CRCW_0402","2742.000","2287.000","90","D10/CRCW0402 100 52K3 1% ET7 e3"
+"R2","RC0201FR-0710KL","TopLayer","YAG_R0201_YAG","2602.000","2407.000","0","Description"
+"R1","ERJ-6ENF7322V","TopLayer","RC0805N_PAN","2582.000","2507.000","270","Description"
+"Q1","IRF4905","TopLayer","IFX-PG-TO220-3-904-1","3067.000","1917.000","180","OptiMOS - P2 Power-Transistor, P-channel-Enhancement mode, VDS -30V"
+"L1","XAL7070-332MEC","TopLayer","IND_XAL7070_COC","2345.000","2500.000","270","Description"
+"J2","2604-1102","TopLayer","CONN2_2604-1102_WAG","1658.417","2405.425","270","Description"
+"J1","2604-1102","TopLayer","CONN2_2604-1102_WAG","1653.583","1404.425","270","Description"
+"F1","3568","TopLayer","3568_KEY","2395.000","1439.000","0","Description"
+"D1","1N4742A","TopLayer","DIOAD1036W78L463D237","3038.063","2117.000","0","Zener Diode, Single, Two Terminal, 12V V(Z), 5%, DO-204AL"
+"C6","GRM155R71C223KA01D","TopLayer","G-155_MUR","2585.747","2349.401","180","Description"
+"C5","C3225X6S1C226M250AC","TopLayer","CAP_C3225X6S1C226M250AC","2025.000","2442.000","90",""
+"C4","C0603C151K3GACTU","TopLayer","CAPC17595_87N_KEM","2722.000","2397.000","90","SMD Comm C0G, Ceramic, 150 pF, 10%, 25 VDC, C0G, SMD, MLCC, Ultra-Stable, Low Loss, Class I, 0603"
+"C3","CC0805KRX7R9BB104","TopLayer","CC0805N_YAG","2992.000","2292.000","270","Description"
+"C2","MSASU32MSB5106KPNA01","TopLayer","CAP_MSAS32-M_TAY","2842.000","2317.000","270","Description"
+"C1","EMK107B7104KA-T","TopLayer","cap_UMK107ABJ474KA-T_TAY","2259.000","2195.000","90","Description"

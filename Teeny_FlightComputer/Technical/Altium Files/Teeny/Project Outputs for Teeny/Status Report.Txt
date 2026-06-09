@@ -1,0 +1,10 @@
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [[No Variations]] of Project [Teeny.PrjPcb]
+   Generated File[Pick Place for Teeny.csv]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 7:56:52 PM On 6/7/2026

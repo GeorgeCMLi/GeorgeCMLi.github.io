@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Cloud_BuckConverter.PrjPcb]
+   Generated File[Cloud_Buck_PCBLayout.TXT]
+   Generated File[Cloud_Buck_PCBLayout.LDP]
+   Generated File[Cloud_Buck_PCBLayout.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 7:43:03 PM On 5/15/2026

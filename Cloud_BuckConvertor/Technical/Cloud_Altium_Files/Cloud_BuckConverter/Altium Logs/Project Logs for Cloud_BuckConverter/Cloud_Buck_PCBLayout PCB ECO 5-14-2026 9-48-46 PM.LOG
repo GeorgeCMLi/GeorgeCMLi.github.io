@@ -1,0 +1,17 @@
+Change Physical Footprint: Designator=C1 Old Footprint=cap_UMK107ABJ474KA-T_TAY New Footprint=cap_UMK107ABJ474KA-T_TAY
+Change Physical Footprint: Designator=C2 Old Footprint=CAP_MSAS32-M_TAY New Footprint=CAP_MSAS32-M_TAY
+Change Physical Footprint: Designator=C3 Old Footprint=CC0805N_YAG New Footprint=CC0805N_YAG
+Change Physical Footprint: Designator=C4 Old Footprint=CAPC17595_87N_KEM New Footprint=CAPC17595_87N_KEM
+Change Physical Footprint: Designator=C5 Old Footprint=CAP_C3225X6S1C226M250AC New Footprint=CAP_C3225X6S1C226M250AC
+Change Physical Footprint: Designator=C6 Old Footprint=G-155_MUR New Footprint=G-155_MUR
+Change Physical Footprint: Designator=D1 Old Footprint=DIOAD1036W78L463D237 New Footprint=DIOAD1036W78L463D237
+Change Physical Footprint: Designator=F1 Old Footprint=3568_KEY New Footprint=3568_KEY
+Change Physical Footprint: Designator=J1 Old Footprint=CONN2_2604-1102_WAG New Footprint=CONN2_2604-1102_WAG
+Change Physical Footprint: Designator=J2 Old Footprint=CONN2_2604-1102_WAG New Footprint=CONN2_2604-1102_WAG
+Change Physical Footprint: Designator=L1 Old Footprint=IND_XAL7070_COC New Footprint=IND_XAL7070_COC
+Change Physical Footprint: Designator=Q1 Old Footprint=IFX-PG-TO220-3-904-1 New Footprint=IFX-PG-TO220-3-904-1
+Change Physical Footprint: Designator=R1 Old Footprint=RC0805N_PAN New Footprint=RC0805N_PAN
+Change Physical Footprint: Designator=R2 Old Footprint=YAG_R0201_YAG New Footprint=YAG_R0201_YAG
+Change Physical Footprint: Designator=R3 Old Footprint=RES_CRCW_0402 New Footprint=RES_CRCW_0402
+Change Physical Footprint: Designator=R4 Old Footprint=RES_CRCW_0805 New Footprint=RES_CRCW_0805
+Change Physical Footprint: Designator=U1 Old Footprint=RPA0010A-MFG New Footprint=RPA0010A-MFG
