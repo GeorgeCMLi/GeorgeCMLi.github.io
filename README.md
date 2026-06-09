@@ -78,7 +78,7 @@ I noticed that current market options for a 5V buck converter could not handle m
 
 <br><br>
 ## Resume
-[Resume](Other/Resume_George_C_Li.pdf)
+[Resume](Resume_George_C_Li.pdf)
 
 ## Contact Information
 Email: GeCgMnLi@gmail.com
