@@ -15,7 +15,12 @@ SLAYER is a flight computer designed to fit inside a small sized model rocket to
 
 ### Details
 - ESP32-C3-Mini-1U Module as a microcontroller
-- LM
+- LSM6DSMTR IMU
+- BMP581 Barometric Pressure Sensor for altitude reading
+- W25Q128JVSIQ 16 MB SPI Flash Memory Storage
+- Support for 1 pyrotechnic such as deploying parachute during flight
+- Status LEDs
+- 2.15" x 1.55" x 0.35" PCB
 
 ### Criteria
 [Project Proposal PDF](SLAYER_FlightComputer/NonTechnical/SLAYER_ProjectProposal.pdf)
@@ -39,8 +44,11 @@ I recommend downloading the SLAYER_Altium folder as it included all symbol, foot
 Inspired by BPS Space's "Smallest Flight Computer" video (I'm a huge fan). I tried to make Teeny smaller than 16mm x 17mm while also adding a microSD slot but the slot took too much space. After many iterations in layout and component selection I managed to minimize the PCB footprint to 1" x 0.6" or about 25.4mm x 15.24mm. This project as less serious than SLAYER so no formal timeline or proposal was written.
 
 ### Details
-- i
-- 
+- ATSAMD21E18A-MUT as a microcontroller
+- LSM6DSRXTR IMU
+- MicroSD Card Slot for storage
+- Status LED
+- 1" x 0.6" x 0.2" PCB
 
 ### Altium Files &nbsp; [Teeny Altium Project](Teeny_FlightComputer/Technical/Altium%20Files/Teeny) &nbsp; [Bill of Materials](Teeny_FlightComputer/Technical/Altium%20Files/Teeny/Project%20Outputs%20for%20Teeny/Teeny_BOM_V1.xlsx)
 
@@ -52,8 +60,11 @@ Inspired by BPS Space's "Smallest Flight Computer" video (I'm a huge fan). I tri
 I noticed that current market options for a 5V buck converter could not handle much current with the highest one I found being able to do 5 A. So I decided to make my own both for personal use and as a challenge and opportunity to sharpen my embedded skills. The process included finding an appropriate switcher, capacitors, inductors, and trace calculations which ended up in a 9-24V input to 5V output 10 A design.
 
 ### Details
-- i
-- 1
+- TPS56A37RPAR as main step down chip
+- Reverse polarity protection through PNP MOSFET
+- Fused at input
+- Status LEDs
+- 2.4" x 1.83" x 0.5" PCB
 
 ### Criteria
 [Project Proposal PDF](Cloud_BuckConvertor/NonTechnical/CloudBuck_ProjectProposal.pdf)
@@ -66,4 +77,9 @@ I noticed that current market options for a 5V buck converter could not handle m
 
 
 <br><br>
-## Resume & Contact Information
+## Resume
+[Resume](Other/Resume_George_C_Li.pdf)
+
+## Contact Information
+Email: GeCgMnLi@gmail.com
+Phone: +1 (909)-551-1199
