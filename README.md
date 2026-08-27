@@ -1,5 +1,12 @@
+## Navigation
+* [Home](README.md)
+* [About Me](about.md)
+* [Collegiate Rocket Work](rpl.md)
+* [Personal Projects](myproj.md)
+* [Contact Info.](contact.md)
+  
 # George's Portfolio
-A Github page hosting documnetaion of all my previous projects
+A Github page hosting documentaion of all my previous projects
 
 ### Content:
 1. SLAYER Flight Computer
