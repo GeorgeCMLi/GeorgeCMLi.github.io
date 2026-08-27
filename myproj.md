@@ -5,7 +5,7 @@
 * [About Me](about.md)
 * [Collegiate Rocket Work](rpl.md)
 * [Personal Projects](myproj.md)
-* [Contact Info.](contact.md)
+* [Contact Information](contact.md)
 
 ## My Personal Technical Projects
 1. SLAYER Flight Computer
