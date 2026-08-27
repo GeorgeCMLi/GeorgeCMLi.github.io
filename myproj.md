@@ -1,3 +1,5 @@
+# Personal Technical Projects
+
 ## Navigation
 * [Home](README.md)
 * [About Me](about.md)
@@ -5,7 +7,7 @@
 * [Personal Projects](myproj.md)
 * [Contact Info.](contact.md)
 
-# My Personal Technical Projects
+## My Personal Technical Projects
 1. SLAYER Flight Computer
 2. Teeny Flight Computer
 3. Cloud Buck Converter
