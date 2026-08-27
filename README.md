@@ -4,7 +4,7 @@
 * [About Me](about.md)
 * [Collegiate Rocket Project](rpl.md)
 * [Personal Projects](myproj.md)
-* [Contact Info.](contact.md)
+* [Contact Information](contact.md)
   
 ## George's Portfolio
 A Github page hosting documentaion of all my previous projects.
