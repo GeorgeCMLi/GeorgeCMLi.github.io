@@ -1,3 +1,5 @@
+# About Me
+
 ## Navigation
 * [Home](README.md)
 * [About Me](about.md)
@@ -5,4 +7,4 @@
 * [Personal Projects](myproj.md)
 * [Contact Info.](contact.md)
 
-# Who Am I?
+## Who Am I?
