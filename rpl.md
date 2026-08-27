@@ -1,3 +1,5 @@
+# Rocket Powered Lander Project (RPL)
+
 ## Navigation
 * [Home](README.md)
 * [About Me](about.md)
@@ -5,5 +7,5 @@
 * [Personal Projects](myproj.md)
 * [Contact Info.](contact.md)
 
-# Rocket Powered Lander Project
+## What is RPL?
 A collegiate rocket project group at Cal Poly Pomona.
