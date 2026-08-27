@@ -5,7 +5,7 @@
 * [About Me](about.md)
 * [Collegiate Rocket Work](rpl.md)
 * [Personal Projects](myproj.md)
-* [Contact Info.](contact.md)
+* [Contact Information](contact.md)
 
 ## Email  |  GeCgMnLi@gmail.com
 Preferably reach out by email
