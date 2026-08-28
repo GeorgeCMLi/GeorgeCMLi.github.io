@@ -29,15 +29,17 @@ SLAYER is a flight computer designed to fit inside a small sized model rocket to
 
 ### Criteria
 [Project Proposal PDF](SLAYER_FlightComputer/NonTechnical/SLAYER_ProjectProposal.pdf)
+<br>
+<img width="400" height="512" alt="SLAYER_ProjectProposal" src="https://github.com/user-attachments/assets/7da60d00-99dc-4571-96db-51dd1001a070" />
 
-[Project Requirements PDF](SLAYER_FlightComputer/Technical/SLAYER_Requirements.pdf)
+[Project Requirements PDF](SLAYER_FlightComputer/Technical/SLAYER_Requirements.docx)
+<br>
+<img width="400" height="512" alt="SLAYER_Requirements_Page1" src="https://github.com/user-attachments/assets/76b0b66d-ae1f-4564-8504-381365d28f2e" />
 
-### Project Schedule
-[SLAYER Gantt Chart](SLAYER_FlightComputer/NonTechnical/SLAYER_Gantt.xlsx)
-
-### Trade Study
-[SLAYER Trade Study](SLAYER_FlightComputer/Technical/SLAYER_TradeStudy.xlsx)
-
+### [Project Schedule](SLAYER_FlightComputer/NonTechnical/SLAYER_Gantt.xlsx)
+Download .xlsx above.
+### [Trade Study](SLAYER_FlightComputer/Technical/SLAYER_TradeStudy.xlsx)
+Download .xlsx above.
 ### Altium Files &nbsp; [SLAYER Altium Project](SLAYER_FlightComputer/Technical/SLAYER_Altium) &nbsp; [Bill of Materials](SLAYER_FlightComputer/Technical/SLAYER_Altium/Project%20Outputs%20for%20SLAYER_Altium/SLAYER_BOM_V1.xlsx)
 I recommend downloading the SLAYER_Altium folder as it included all symbol, footprint, and CAD files for schematic and layout to avoid library issues. 
 
