@@ -11,3 +11,4 @@
 Preferably reach out by email
 ## Phone Number | +1 (909)-551-1199
 ## Location  |  Diamond Bar, CA
+## LinkedIn  | www.linkedin.com/in/george-c-li
