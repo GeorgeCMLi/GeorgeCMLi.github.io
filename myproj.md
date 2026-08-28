@@ -42,7 +42,14 @@ Download .xlsx above.
 Download .xlsx above.
 ### Altium Files &nbsp; [SLAYER Altium Project](SLAYER_FlightComputer/Technical/SLAYER_Altium) &nbsp; [Bill of Materials](SLAYER_FlightComputer/Technical/SLAYER_Altium/Project%20Outputs%20for%20SLAYER_Altium/SLAYER_BOM_V1.xlsx)
 I recommend downloading the SLAYER_Altium folder as it included all symbol, footprint, and CAD files for schematic and layout to avoid library issues. 
+<br>
+### Images
 
+Circuit schematic
+
+PCB layout
+
+Final Assembly
 
 
 <br><br>
@@ -58,7 +65,14 @@ Inspired by BPS Space's "Smallest Flight Computer" video (I'm a huge fan). I tri
 - 1" x 0.6" x 0.2" PCB
 
 ### Altium Files &nbsp; [Teeny Altium Project](Teeny_FlightComputer/Technical/Altium%20Files/Teeny) &nbsp; [Bill of Materials](Teeny_FlightComputer/Technical/Altium%20Files/Teeny/Project%20Outputs%20for%20Teeny/Teeny_BOM_V1.xlsx)
+<br>
+### Images
 
+Circuit Schematic
+
+PCB Layout
+
+Final Assembly (I actually lost it because its too small)
 
 
 <br><br>
@@ -75,8 +89,21 @@ I noticed that current market options for a 5V buck converter could not handle m
 
 ### Criteria
 [Project Proposal PDF](Cloud_BuckConvertor/NonTechnical/CloudBuck_ProjectProposal.pdf)
+<br>
+<img width="400" height="512" alt="image" src="https://github.com/user-attachments/assets/cadb4753-4dd5-4820-b2cb-27156d4c8805" />
 
 ### Project Schedule
 [Cloud Gantt](Cloud_BuckConvertor/NonTechnical/CloudBuck_Gantt.xlsx)
 
 ### Altium Files &nbsp; [Cloud Altium Project](Cloud_BuckConvertor/Technical/Cloud_Altium_Files/Cloud_BuckConverter) &nbsp; [Bill of Materials](Cloud_BuckConvertor/Technical/Cloud_Altium_Files/Cloud_BuckConverter/Project%20Outputs%20for%20Cloud_BuckConverter/Cloud_BuckConverter.xlsx)
+<br>
+### Images
+
+Circuit Schematic
+
+Simulation
+
+PCB Layout
+
+Final Assembly
+
