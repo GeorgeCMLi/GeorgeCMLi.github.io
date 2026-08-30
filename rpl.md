@@ -19,3 +19,10 @@ I have helped design 3 boards and data collection systems used during static fir
 I have additionally helped put together presentations for PDRs and CDRs as well as documenting the design process of the avionics system.
 
 ## Documentation
+Top view of PCB design for static fire test #7 of RPL
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/82913f0f-1aea-4da6-84b9-ae889c0be41b" />
+<br>
+Bottom view of PCB design for static fire test #7 of RPL
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/813b4079-8e27-4378-83dd-52ec429c9a9d" />
+<br>
+
