@@ -31,3 +31,18 @@ Schematics of statics fire test #7 PCB
 <img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/f9d93c59-69d1-45f9-bfb8-b459448794af" />
 <br>
 <img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/814bd7c9-a810-4f84-b95f-74d0ccb1b6f0" />
+<br> <br>
+Schematics of DAQ v3
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/2f786540-1b7a-4ca9-b35e-1f9a7103d59b" />
+<br>
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/4761814e-de8a-460a-acf7-a6e0c5257b7a" />
+<br>
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/992462eb-a702-46eb-a168-3bdb42872032" />
+<br>
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/b4500dc0-d1fe-40ed-9cd7-033085e1e5b5" />
+<br>
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/0ca46ac7-5249-48b0-bc73-2cb5bb7bd294" />
+<br>
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/d5da91cf-d7ce-4d62-afff-2c11ce8eea2c" />
+
+
