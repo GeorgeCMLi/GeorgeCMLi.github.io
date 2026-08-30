@@ -24,5 +24,10 @@ Top view of PCB design for static fire test #7 of RPL
 <br>
 Bottom view of PCB design for static fire test #7 of RPL
 <img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/813b4079-8e27-4378-83dd-52ec429c9a9d" />
+<br> <br>
+Schematics of statics fire test #7 PCB
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/acca2880-619e-40a9-86ae-75bdf1267b76" />
 <br>
-
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/f9d93c59-69d1-45f9-bfb8-b459448794af" />
+<br>
+<img width="512" height="340" alt="image" src="https://github.com/user-attachments/assets/814bd7c9-a810-4f84-b95f-74d0ccb1b6f0" />
