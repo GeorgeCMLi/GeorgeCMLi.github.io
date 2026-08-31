@@ -19,6 +19,9 @@ Collection of work from multiple projects that I consider to be my best.
 <br>
 <img width="590" height="426" alt="image" src="https://github.com/user-attachments/assets/9a69a190-5101-4e88-98ff-1f309096ee76" />
 <br>
+<img width="1280" height="1440" alt="image" src="https://github.com/user-attachments/assets/b6cc9464-e483-4099-8a14-894a01cb5cba" />
+<br>
+<img width="1058" height="717" alt="image" src="https://github.com/user-attachments/assets/a1653ed4-3646-4d58-b0c0-dd7f8ff60af6" />
 
 
 ## Details
