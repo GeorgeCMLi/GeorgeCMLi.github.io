@@ -1,0 +1,8 @@
+---
+---
+@import "{{ site.theme }}";
+
+/* Change the default 640px limit to your desired layout width */
+.inner {
+  max-width: 900px; /* Or use a percentage like 85% */
+}
