@@ -22,6 +22,13 @@ Collection of work from multiple projects that I consider to be my best.
 <img width="640" height="720" alt="image" src="https://github.com/user-attachments/assets/b6cc9464-e483-4099-8a14-894a01cb5cba" />
 <br>
 <img width="1058" height="717" alt="image" src="https://github.com/user-attachments/assets/a1653ed4-3646-4d58-b0c0-dd7f8ff60af6" />
+<br>
+<img width="1164" height="402" alt="image" src="https://github.com/user-attachments/assets/38886773-e825-4d72-ba92-371d49b6923f" />
+<br>
+<img width="2160" height="2880" alt="image" src="https://github.com/user-attachments/assets/15beb0d2-8ec9-450a-9560-798dcff8df46" />
+<br>
+<img width="2160" height="2880" alt="image" src="https://github.com/user-attachments/assets/2bc043a0-2d03-4fa9-8453-500328b63350" />
+<br>
 
 
 ## Details
