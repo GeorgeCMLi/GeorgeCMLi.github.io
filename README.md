@@ -3,7 +3,6 @@
 * [Home](README.md)
 * [About Me](about.md)
 * [Collegiate Rocket Project](rpl.md)
-* [Personal Projects](myproj.md)
 * [Contact Information](contact.md)
   
 ## George's Portfolio
